@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zed Blaze - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Zed Blaze
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          zedblaze@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          01345676459
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.dribbble.com/users/605032/screenshots/3196252/media/095306a51ec6fa0358b60b3058f1dd8e.gif" class="profile_image" width="50px" height="50px"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Zed Blaze! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 4 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>3 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>2 years experience</p>
+        </div>
+    </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <ul>
+                  <li>Created a personal portfolio website to showcase my skills and projects using HTML, CSS and JavaScript.</li>
+                </ul>
+            </div>
+          <hr>
+          <div class="project-card">
+            <h3>Weather App</h3>
+            <ul>
+              <li>Developed a weather forecasting app using React and OpenWeather API.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Online Learning Platform</h3>
+            <ul>
+              <li>Developed an online learning platform where students can enroll in courses and track progress.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Zed is an exceptional developer with a keen eye for detail. His ability to tackle complex problems and provide efficient solutions is impressive.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            It’s been great working with Zed. He is proactive, and always goes the extra mile to ensure the success of the project.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Zed’s technical skills and communication abilities make him a valuable asset to any team. He consistently delivers excellent results.
+            <span>&#8221;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
